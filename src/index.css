@@ -1,22 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --primary: 151, 100%, 33%;
+  /* #00A651 translated to HSL (approx) */
+  --primary-dark: 151, 100%, 25%;
+  --secondary: 198, 100%, 37%;
+  --accent: 217, 91%, 60%;
+  --bg-dark: 222, 47%, 11%;
+  --text-main: 215, 25%, 27%;
+  --text-muted: 215, 16%, 47%;
+  --primary-glow: rgba(0, 166, 81, 0.3);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  .card-premium {
+    @apply p-8 rounded-[3rem] bg-white border border-gray-100 shadow-premium transition-all duration-700 hover:shadow-premium-hover hover:-translate-y-3 hover:border-primary/30;
+  }
+
+  .btn-premium {
+    @apply inline-flex items-center justify-center gap-2 bg-gradient-to-r from-primary to-primary-dark text-white font-black rounded-2xl shadow-btn-primary hover:shadow-btn-primary-hover hover:-translate-y-1 transition-all duration-300 active:scale-95;
+  }
+
+  .glass-premium {
+    @apply bg-white/70 backdrop-blur-xl border border-white/40 shadow-glass;
+  }
+
+  .glass-dark {
+    @apply bg-gray-900/80 backdrop-blur-2xl border border-white/10 shadow-glass;
+  }
+
+  .bg-mesh {
+    background-color: #ffffff;
+    background-image:
+      radial-gradient(at 0% 0%, rgba(16, 76, 145, 0.05) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(0, 166, 81, 0.05) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(58, 175, 169, 0.05) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, rgba(16, 76, 145, 0.05) 0px, transparent 50%);
+  }
+
+  /* Reveal System for Framer Motion Fallback or Custom Observer */
+  .reveal {
+    @apply opacity-0 translate-y-12 transition-all duration-1000 ease-[cubic-bezier(0.2, 0.8, 0.2, 1)];
+  }
+
+  .reveal-visible {
+    @apply opacity-100 translate-y-0;
+  }
+
+  .hero-word-reveal {
+    @apply inline-block opacity-0 translate-y-8 blur-sm transition-all duration-700;
+  }
+
+  .reveal-visible .hero-word-reveal {
+    @apply opacity-100 translate-y-0 blur-0;
+  }
+
   body {
-    @apply antialiased text-gray-900 bg-white;
+    @apply font-sans antialiased text-gray-900 bg-white scroll-smooth;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight;
   }
 }
 
 @layer components {
-  .btn-primary {
-    @apply px-6 py-3 bg-primary text-white font-medium text-lg rounded-xl shadow-lg shadow-blue-500/30 hover:bg-primary-dark transition-all duration-300 hover:-translate-y-1 inline-flex items-center justify-center;
-  }
-
-  .btn-secondary {
-    @apply px-6 py-3 bg-white text-gray-800 font-medium text-lg rounded-xl border border-gray-200 shadow-sm hover:bg-gray-50 transition-all duration-300 inline-flex items-center justify-center;
-  }
-
   .section-padding {
     @apply py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto;
   }
