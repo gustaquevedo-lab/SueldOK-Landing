@@ -54,7 +54,7 @@ function Navigation() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex-shrink-0 flex items-center group">
-            <img src="/logo_transparent.png" alt="SueldOK" className="h-10 md:h-12 w-auto transition-transform duration-500 group-hover:scale-105" />
+            <img src="/logo.png" alt="SueldOK" className="h-10 md:h-12 w-auto transition-transform duration-500 group-hover:scale-105" />
           </Link>
 
           <div className="hidden md:flex items-center space-x-10">
@@ -516,8 +516,8 @@ function App() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <img src="/logo_transparent.png" className="h-16 mx-auto mb-12 opacity-80" alt="SueldOK" />
-              <p className="text-gray-500 text-xl font-black mb-2">La tranquilidad de pagar bien.</p>
+              <img src="/logo.png" className="h-16 mx-auto mb-10 opacity-90" alt="SueldOK" />
+              <p className="text-gray-500 text-xl font-bold mb-2">La tranquilidad de pagar bien</p>
               <p className="text-gray-400 text-sm font-medium mb-16 italic">© 2024 SueldOK - IntelliHouse Soluciones E.A.S.</p>
               <div className="flex flex-wrap justify-center gap-10 text-xs font-black text-gray-400 uppercase tracking-[0.3em]">
                 <Link to="/terminos" className="hover:text-primary transition-colors">Términos</Link>

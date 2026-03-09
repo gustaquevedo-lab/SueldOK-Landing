@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
 
 :root {
-  --primary: 151, 100%, 33%;
-  /* #00A651 translated to HSL (approx) */
-  --primary-dark: 151, 100%, 25%;
+  --primary: 208, 100%, 28%;
+  /* #004b8d translated to HSL */
+  --primary-dark: 208, 100%, 21%;
   --secondary: 198, 100%, 37%;
   --accent: 217, 91%, 60%;
   --bg-dark: 222, 47%, 11%;
