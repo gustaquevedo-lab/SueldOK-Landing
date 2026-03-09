@@ -529,7 +529,7 @@ function App() {
             >
               <img src="/logo.png" className="h-16 mx-auto mb-10 opacity-90" alt="SueldOK" />
               <p className="text-gray-500 text-xl font-bold mb-2">La tranquilidad de pagar bien</p>
-              <p className="text-gray-400 text-sm font-medium mb-16 italic">© 2024 SueldOK - IntelliHouse Soluciones E.A.S.</p>
+              <p className="text-gray-400 text-sm font-medium mb-16 italic">© 2026 SueldOK - IntelliHouse Soluciones E.A.S.</p>
               <div className="flex flex-wrap justify-center gap-10 text-xs font-black text-gray-400 uppercase tracking-[0.3em]">
                 <Link to="/terminos" className="hover:text-primary transition-colors">Términos</Link>
                 <Link to="/privacidad" className="hover:text-primary transition-colors">Privacidad</Link>
