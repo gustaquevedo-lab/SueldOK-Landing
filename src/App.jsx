@@ -328,9 +328,9 @@ function LandingHome() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {[
-              { n: 'Ana Rodriguez', c: 'Contadora Senior', r: 'SueldOK me ahorró 20 horas de trabajo mensual. El cálculo de IPS es perfecto.' },
-              { n: 'Carlos Benítez', c: 'Gerente HR', r: 'La mejor inversión que hicimos para nuestras 5 sucursales. El soporte es impecable.' },
-              { n: 'Laura Martínez', c: 'Consultante RRHH', r: 'Por fin un sistema que entiende la ley de Paraguay y es visualmente hermoso.' }
+              { n: 'Ana Rodriguez', c: 'Contadora Senior', r: 'SueldOK me ahorró 20 horas de trabajo mensual. El cálculo de IPS es perfecto.', img: '/avatars/ana_avatar.png' },
+              { n: 'Carlos Benítez', c: 'Gerente HR', r: 'La mejor inversión que hicimos para nuestras 5 sucursales. El soporte es impecable.', img: '/avatars/carlos_avatar.png' },
+              { n: 'Laura Martínez', c: 'Consultante RRHH', r: 'Por fin un sistema que entiende la ley de Paraguay y es visualmente hermoso.', img: '/avatars/laura_avatar.png' }
             ].map((t, idx) => (
               <motion.div
                 key={idx}
@@ -345,7 +345,9 @@ function LandingHome() {
                 </div>
                 <p className="text-gray-700 font-medium italic text-2xl mb-10 leading-relaxed group-hover:text-gray-900 transition-colors">"{t.r}"</p>
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 bg-gradient-to-br from-gray-100 to-gray-200 rounded-full shadow-inner"></div>
+                  <div className="w-14 h-14 rounded-full shadow-inner overflow-hidden">
+                    <img src={t.img} alt={t.n} className="w-full h-full object-cover" />
+                  </div>
                   <div>
                     <p className="font-black text-gray-900 text-lg">{t.n}</p>
                     <p className="text-sm text-gray-400 font-bold uppercase tracking-widest">{t.c}</p>
@@ -402,7 +404,7 @@ function LandingHome() {
             className="mt-20 text-center"
           >
             <p className="text-white/40 text-lg font-medium">
-              ¿Tu empresa necesita más? <a href="https://wa.me/595981000000" className="text-primary hover:underline font-black">Contacta con Ventas</a> para planes personalizados de más de 90 usuarios.
+              ¿Tu empresa necesita más? <a href="https://wa.me/595994516360?text=Hola!%20tengo%20mas%20de%2090%20usuarios%20y%20me%20interesa%20el%20sistema" className="text-primary hover:underline font-black">Contacta con Ventas</a> para planes personalizados de más de 90 usuarios.
             </p>
           </motion.div>
         </div>
