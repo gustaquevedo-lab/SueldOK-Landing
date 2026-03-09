@@ -59,7 +59,7 @@ function Navigation() {
 
           <div className="hidden md:flex items-center space-x-10">
             {['Características', 'Funciona', 'Beneficios', 'Planes'].map((item) => (
-              <a key={item} href={`/#${item.toLowerCase()}`} className="text-gray-600 hover:text-primary font-bold transition-all text-xs uppercase tracking-[0.2em]">{item}</a>
+              <a key={item} href={`#${item.toLowerCase().replace('í', 'i')}`} className="text-gray-600 hover:text-primary font-bold transition-all text-xs uppercase tracking-[0.2em]">{item}</a>
             ))}
             <div className="flex items-center gap-6 ml-4 border-l border-gray-100 pl-8">
               <a href="https://sueldok.vercel.app" className="text-gray-900 font-bold hover:text-primary transition-colors text-sm">Login</a>
@@ -106,7 +106,7 @@ function Navigation() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.1 * idx }}
                   key={item}
-                  href={`/#${item.toLowerCase()}`}
+                  href={`#${item.toLowerCase().replace('í', 'i')}`}
                   onClick={() => setIsMenuOpen(false)}
                   className="hover:text-primary transition-colors"
                 >
@@ -181,7 +181,7 @@ function LandingHome() {
             >
               Probar SueldOK Gratis <ArrowRight size={24} />
             </motion.a>
-            <a href="#features" className="px-10 py-6 glass-premium font-black text-xl rounded-2xl hover:bg-white transition-all">
+            <a href="#beneficios" className="px-10 py-6 glass-premium font-black text-xl rounded-2xl hover:bg-white transition-all">
               Ver beneficios
             </a>
           </motion.div>
@@ -265,7 +265,7 @@ function LandingHome() {
       </section>
 
       {/* Features Grid */}
-      <section id="features" className="py-40 bg-gray-50/50">
+      <section id="caracteristicas" className="py-40 bg-gray-50/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -289,7 +289,7 @@ function LandingHome() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-40 bg-white overflow-hidden relative">
+      <section id="beneficios" className="py-40 bg-white overflow-hidden relative">
         <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_top_right,rgba(0,166,81,0.03),transparent)] -z-10"></div>
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
@@ -351,25 +351,36 @@ function LandingHome() {
             <PricingCard
               title="Semilla"
               price="GRATIS"
-              features={["Hasta 5 Empleados", "Liquidaciones Básicas", "Soporte Comunitario"]}
+              features={["Hasta 3 Usuarios", "Liquidaciones Básicas", "Soporte Comunitario"]}
               delay={0.1}
             />
             <PricingCard
               title="Crecimiento"
-              price="Gs. 150.000"
+              price="Gs. 190.000"
               period="/mes"
               highlight
-              features={["Hasta 50 Empleados", "Portal del Empleado", "Control de Asistencia", "Soporte Prioritario"]}
+              features={["Hasta 30 Usuarios", "Portal del Empleado", "Control de Asistencia", "Soporte Prioritario"]}
               delay={0}
             />
             <PricingCard
               title="Corporativo"
-              price="Gs. 450.000"
+              price="Gs. 380.000"
               period="/mes"
-              features={["Empleados Ilimitados", "Multitenancy", "API Access", "Acceso Contadores"]}
+              features={["Hasta 90 Usuarios", "Multitenancy", "API Access", "Acceso Contadores"]}
               delay={0.2}
             />
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-20 text-center"
+          >
+            <p className="text-white/40 text-lg font-medium">
+              ¿Tu empresa necesita más? <a href="https://wa.me/595981000000" className="text-primary hover:underline font-black">Contacta con Ventas</a> para planes personalizados de más de 90 usuarios.
+            </p>
+          </motion.div>
         </div>
       </section>
 
