@@ -366,7 +366,7 @@ function LandingHome() {
               title="Corporativo"
               price="Gs. 380.000"
               period="/mes"
-              features={["Hasta 90 Usuarios", "Multitenancy", "API Access", "Acceso Contadores"]}
+              features={["Hasta 90 Usuarios", "Multisucursal con Geofence", "API Access", "Finiquitos automatizados"]}
               delay={0.2}
             />
           </div>
