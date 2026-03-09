@@ -58,7 +58,7 @@ function Navigation() {
           </Link>
 
           <div className="hidden md:flex items-center space-x-10">
-            {['Características', 'Funciona', 'Beneficios', 'Planes'].map((item) => (
+            {['Características', 'Funciones', 'Beneficios', 'Planes'].map((item) => (
               <a key={item} href={`#${item.toLowerCase().replace('í', 'i')}`} className="text-gray-600 hover:text-primary font-bold transition-all text-xs uppercase tracking-[0.2em]">{item}</a>
             ))}
             <div className="flex items-center gap-6 ml-4 border-l border-gray-100 pl-8">
@@ -100,7 +100,7 @@ function Navigation() {
               </button>
             </div>
             <div className="flex flex-col gap-8 text-4xl font-black">
-              {['Características', 'Funciona', 'Beneficios', 'Planes'].map((item, idx) => (
+              {['Características', 'Funciones', 'Beneficios', 'Planes'].map((item, idx) => (
                 <motion.a
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -228,7 +228,7 @@ function LandingHome() {
       </section>
 
       {/* Steps Section */}
-      <section id="funciona" className="py-40 relative">
+      <section id="funciones" className="py-40 relative">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
