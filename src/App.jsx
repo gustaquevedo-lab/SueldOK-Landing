@@ -215,14 +215,38 @@ function LandingHome() {
         </motion.div>
       </section>
 
-      {/* Trusted By */}
+      {/* Core Highlights */}
       <section className="py-24 bg-white/30 border-y border-gray-100 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-          <p className="text-[10px] font-black text-gray-400 uppercase tracking-[0.4em] mb-16">EMPRESAS QUE YA CONFIAN</p>
-          <div className="flex flex-wrap justify-center gap-16 md:gap-32 opacity-30 grayscale hover:grayscale-0 transition-all duration-1000">
-            {['CONSULTORAS', 'RETAIL S.A.', 'GRUPO EMPRESARIAL', 'AGROPY'].map(brand => (
-              <span key={brand} className="text-2xl md:text-3xl font-black tracking-tighter italic">{brand}</span>
-            ))}
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-8">
+            <div className="flex flex-col items-center text-center group">
+              <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+                <Shield size={24} />
+              </div>
+              <h4 className="text-sm font-black text-gray-900 uppercase tracking-widest mb-2">100% Legal & Local</h4>
+              <p className="text-xs text-gray-500 font-bold uppercase tracking-tighter">Cumplimiento IPS & MTESS</p>
+            </div>
+            <div className="flex flex-col items-center text-center group">
+              <div className="w-12 h-12 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary mb-4 group-hover:scale-110 transition-transform">
+                <Zap size={24} />
+              </div>
+              <h4 className="text-sm font-black text-gray-900 uppercase tracking-widest mb-2">Velocidad Extrema</h4>
+              <p className="text-xs text-gray-500 font-bold uppercase tracking-tighter">Liquidación en &lt;1 minuto</p>
+            </div>
+            <div className="flex flex-col items-center text-center group">
+              <div className="w-12 h-12 rounded-2xl bg-orange-500/10 flex items-center justify-center text-orange-500 mb-4 group-hover:scale-110 transition-transform">
+                <CheckCircle2 size={24} />
+              </div>
+              <h4 className="text-sm font-black text-gray-900 uppercase tracking-widest mb-2">Autogestión</h4>
+              <p className="text-xs text-gray-500 font-bold uppercase tracking-tighter">Firma Digital & Certificados</p>
+            </div>
+            <div className="flex flex-col items-center text-center group">
+              <div className="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center text-accent mb-4 group-hover:scale-110 transition-transform">
+                <MessageCircle size={24} />
+              </div>
+              <h4 className="text-sm font-black text-gray-900 uppercase tracking-widest mb-2">Soporte Humano</h4>
+              <p className="text-xs text-gray-500 font-bold uppercase tracking-tighter">Asistencia 24/7 Expertos</p>
+            </div>
           </div>
         </div>
       </section>
