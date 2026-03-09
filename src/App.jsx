@@ -379,6 +379,7 @@ function LandingHome() {
               price="GRATIS"
               features={["Hasta 3 Usuarios", "Liquidaciones Básicas", "Soporte Comunitario"]}
               delay={0.1}
+              href="https://wa.me/595994516360?text=Me%20interesa%20el%20Plan%20Semilla"
             />
             <PricingCard
               title="Crecimiento"
@@ -387,6 +388,7 @@ function LandingHome() {
               highlight
               features={["Hasta 30 Usuarios", "Portal del Empleado", "Control de Asistencia", "Soporte Prioritario"]}
               delay={0}
+              href="https://wa.me/595994516360?text=Me%20interesa%20el%20Plan%20Crecimiento"
             />
             <PricingCard
               title="Corporativo"
@@ -394,6 +396,7 @@ function LandingHome() {
               period="/mes"
               features={["Hasta 90 Usuarios", "Multisucursal con Geofence", "API Access", "Finiquitos automatizados"]}
               delay={0.2}
+              href="https://wa.me/595994516360?text=Me%20interesa%20el%20Plan%20Corporativo"
             />
           </div>
 
@@ -473,7 +476,7 @@ const FeatureCard = ({ icon, title, description, delay }) => (
   </motion.div>
 );
 
-const PricingCard = ({ title, price, period, features, highlight, delay }) => (
+const PricingCard = ({ title, price, period, features, highlight, delay, href }) => (
   <motion.div
     initial={{ opacity: 0, y: 30 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -498,10 +501,10 @@ const PricingCard = ({ title, price, period, features, highlight, delay }) => (
     <motion.a
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      href="https://app.sueldok.com"
+      href={href || "https://app.sueldok.com"}
       className={`w-full py-5 rounded-2xl font-black text-center block transition-all ${highlight ? 'btn-premium' : 'bg-white/10 text-white hover:bg-white/20'}`}
     >
-      Seleccionar Plan
+      Contratar plan
     </motion.a>
   </motion.div>
 );
