@@ -397,9 +397,11 @@ function LandingHome() {
             <h3 className="text-5xl md:text-7xl font-black text-gray-900 tracking-tight">FAQ</h3>
           </motion.div>
           <div className="space-y-6">
-            <FAQItem q="¿Es compatible con el REI del IPS?" a="Sí, SueldOK genera el archivo TXT oficial listo para subir a la plataforma del IPS sin errores." />
-            <FAQItem q="¿Puedo usarlo si tengo menos de 5 empleados?" a="¡Claro! El plan Semilla es perpetuamente gratuito para fomentar el crecimiento de las PyMEs." />
-            <FAQItem q="¿Los datos cumplen con la ley paraguaya?" a="Absolutamente. Todos los cálculos siguen estrictamente el código laboral y reglamentaciones vigentes del MTESS." />
+            <FAQItem q="¿Es compatible con el REI del IPS y REOP del MTESS?" a="Sí, SueldOK genera automáticamente el archivo TXT oficial para el IPS y las planillas requeridas por el Ministerio de Trabajo (MTESS) sin errores." />
+            <FAQItem q="¿Puedo usarlo si tengo pocos colaboradores?" a="¡Claro! El plan Semilla es perpetuamente gratuito para fomentar el crecimiento de las PyMEs con hasta 3 usuarios." />
+            <FAQItem q="¿Cómo funciona el control de asistencia?" a="Contamos con marcación biométrica web que incluye Geofencing (geolocalización) y verificación por Selfie para garantizar que el equipo marque desde el lugar de trabajo autorizado." />
+            <FAQItem q="¿Las horas extras y beneficios se calculan solos?" a="Absolutamente. El sistema procesa automáticamente horas extras, recargos nocturnos y feriados basándose en las marcaciones de asistencia y los horarios asignados." />
+            <FAQItem q="¿Los datos cumplen con la ley paraguaya?" a="Absolutamente. Todos los cálculos siguen estrictamente el Código Laboral y las reglamentaciones vigentes del MTESS e IPS." />
           </div>
         </div>
       </section>
