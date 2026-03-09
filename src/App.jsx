@@ -59,7 +59,7 @@ function Navigation() {
 
           <div className="hidden md:flex items-center space-x-10">
             {['Características', 'Funciones', 'Beneficios', 'Planes'].map((item) => (
-              <a key={item} href={`#${item.toLowerCase().replace('í', 'i')}`} className="text-gray-600 hover:text-primary font-bold transition-all text-xs uppercase tracking-[0.2em]">{item}</a>
+              <a key={item} href={`/#${item.toLowerCase().replace('í', 'i')}`} className="text-gray-600 hover:text-primary font-bold transition-all text-xs uppercase tracking-[0.2em]">{item}</a>
             ))}
             <div className="flex items-center gap-6 ml-4 border-l border-gray-100 pl-8">
               <a href="https://sueldok.vercel.app" className="text-gray-900 font-bold hover:text-primary transition-colors text-sm">Login</a>
@@ -106,7 +106,7 @@ function Navigation() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.1 * idx }}
                   key={item}
-                  href={`#${item.toLowerCase().replace('í', 'i')}`}
+                  href={`/#${item.toLowerCase().replace('í', 'i')}`}
                   onClick={() => setIsMenuOpen(false)}
                   className="hover:text-primary transition-colors"
                 >
